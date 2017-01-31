@@ -1,0 +1,60 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WorkMonit.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SilentMode" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="DetectHomeOffice" Type="System.String" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="TimeWorkBegin" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)">01/26/2017 07:55:00</Value>
+    </Setting>
+    <Setting Name="TimeWorkEnd" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)">01/26/2017 17:00:00</Value>
+    </Setting>
+    <Setting Name="HOWorkBegin" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)">01/26/2017 11:00:00</Value>
+    </Setting>
+    <Setting Name="HOWorkEnd" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)">01/26/2017 15:00:00</Value>
+    </Setting>
+    <Setting Name="Email" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Signature" Type="System.String" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="SignatureText" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="WrokStartHeader" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Start</Value>
+    </Setting>
+    <Setting Name="WorkStartBody" Type="System.String" Scope="User">
+      <Value Profile="(Default)">I start work</Value>
+    </Setting>
+    <Setting Name="WorkStopHeader" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Stop</Value>
+    </Setting>
+    <Setting Name="WorkStopBody" Type="System.String" Scope="User">
+      <Value Profile="(Default)">I stop work</Value>
+    </Setting>
+    <Setting Name="HomeWorkStartHeader" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Start HO</Value>
+    </Setting>
+    <Setting Name="HomeWorkStartBody" Type="System.String" Scope="User">
+      <Value Profile="(Default)">I start home office</Value>
+    </Setting>
+    <Setting Name="HomeWorkStopHeader" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Stop HO</Value>
+    </Setting>
+    <Setting Name="HomeWorkStopBody" Type="System.String" Scope="User">
+      <Value Profile="(Default)">I stop home office</Value>
+    </Setting>
+    <Setting Name="MailHeader" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Dear,</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

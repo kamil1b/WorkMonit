@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui" onLoad="Ribbon_Load">
+  <ribbon>
+    <tabs>
+      <tab idMso="TabAddIns" label="Work Monit">
+        <group id="SettingsGroup" label="Settings">
+          <button id="settingsButton" label="Basic settings"
+               screentip="Settings" onAction="OnSettingsButton"
+               supertip="Settings about time, option, ect." imageMso="ControlSetControlDefaults" />
+          <button id="textButton" label="Custom text"
+               screentip="Text" onAction="onTextButton"
+               supertip="Set text in messages." imageMso="SlidesPerPageSlideOutline"/>
+        </group>
+        <group id="WorkGroup" label="Work">
+          <button id="WorkStartButton" label="Start Work"
+               screentip="Start" onAction="OnBeginWork"
+               supertip="Send mail about start work" imageMso="StartTimer" size="large" />
+          <button id="WorkStoptButton" label="Stop Work"
+               screentip="Stop" onAction="OnEndWork"
+               supertip="Send mail to stop work" imageMso="FileStartWorkflow" size="large" />
+        </group>
+        <group id="HOGroup" label="Home Office">
+          <button id="HOStartButton" label="Start Work"
+               screentip="Start" onAction="OnBeginHO"
+               supertip="Send mail about start HO" imageMso="StartTimer" size="large" />
+          <button id="HOStoptButton" label="Stop Work"
+               screentip="Stop" onAction="OnEndHO"
+               supertip="Send mail to stop HO" imageMso="FileStartWorkflow" size="large" />
+        </group>        
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>
+
