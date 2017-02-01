@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Text;
+using System.Windows.Forms;
 using Word = Microsoft.Office.Interop.Word;
 
 namespace WorkMonit.Modules
@@ -69,7 +70,14 @@ namespace WorkMonit.Modules
             System.Windows.Forms.RichTextBox rtf = new System.Windows.Forms.RichTextBox();
             var path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), 
                 "Microsoft\\Signatures\\" + signatureName + ".rtf");
-            rtf.LoadFile(path);
+            try {
+                rtf.LoadFile(path);
+            }
+            catch
+            {
+                MessageBox.Show("Can't read signature.");
+            }
+            
             return rtf.Rtf;
         }
 

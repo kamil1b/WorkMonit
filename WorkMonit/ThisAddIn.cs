@@ -2,6 +2,7 @@
 using Office = Microsoft.Office.Core;
 using WorkMonit.Modules;
 using System.Text;
+using System.Windows.Forms;
 
 namespace WorkMonit
 {
@@ -26,6 +27,12 @@ namespace WorkMonit
 
         public void SendeMailItem(MailDetails mail)
         {
+            if(Properties.Settings.Default.Email == "")
+            {
+                MessageBox.Show("Please add supervisior mail");
+                return;
+            }
+
             Outlook.MailItem mailItem = (Outlook.MailItem)
                 this.Application.CreateItem(Outlook.OlItemType.olMailItem);
             mailItem.Subject = mail.Subject;
