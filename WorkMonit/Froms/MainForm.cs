@@ -26,14 +26,14 @@ namespace WorkMonit
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MainObj.SendeMailItem(PrepareMail.PrepareHOMail(TimeCheck.CheckHomeOfficeTime()));
+            MainObj.SendeMailItem(PrepareMail.PrepareHOMail(TimeCheck.CheckHomeOfficeTime()), false);
         }
 
         private ThisAddIn MainObj;
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MainObj.SendeMailItem(PrepareMail.PrepareHOMail(TimeCheck.CheckOfficeTime()));
+            MainObj.SendeMailItem(PrepareMail.PrepareHOMail(TimeCheck.CheckOfficeTime()), false);
         }
     }
 }

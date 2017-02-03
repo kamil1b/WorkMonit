@@ -121,18 +121,6 @@ namespace WorkMonit.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string SignatureText {
-            get {
-                return ((string)(this["SignatureText"]));
-            }
-            set {
-                this["SignatureText"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("Start")]
         public string WrokStartHeader {
             get {
@@ -236,6 +224,75 @@ namespace WorkMonit.Properties {
             }
             set {
                 this["MailHeader"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool MailPrompt {
+            get {
+                return ((bool)(this["MailPrompt"]));
+            }
+            set {
+                this["MailPrompt"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool AutoHomeWork {
+            get {
+                return ((bool)(this["AutoHomeWork"]));
+            }
+            set {
+                this["AutoHomeWork"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::System.Collections.Specialized.StringCollection HomeOfficeDays {
+            get {
+                return ((global::System.Collections.Specialized.StringCollection)(this["HomeOfficeDays"]));
+            }
+            set {
+                this["HomeOfficeDays"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::System.DateTime OnTimeSend {
+            get {
+                return ((global::System.DateTime)(this["OnTimeSend"]));
+            }
+            set {
+                this["OnTimeSend"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int OnTimeSendType {
+            get {
+                return ((int)(this["OnTimeSendType"]));
+            }
+            set {
+                this["OnTimeSendType"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::System.DateTime OnWorkBeginTime {
+            get {
+                return ((global::System.DateTime)(this["OnWorkBeginTime"]));
+            }
+            set {
+                this["OnWorkBeginTime"] = value;
             }
         }
     }

@@ -26,9 +26,6 @@
     <Setting Name="Signature" Type="System.String" Scope="User">
       <Value Profile="(Default)">None</Value>
     </Setting>
-    <Setting Name="SignatureText" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
     <Setting Name="WrokStartHeader" Type="System.String" Scope="User">
       <Value Profile="(Default)">Start</Value>
     </Setting>
@@ -55,6 +52,24 @@
     </Setting>
     <Setting Name="MailHeader" Type="System.String" Scope="User">
       <Value Profile="(Default)">Dear,</Value>
+    </Setting>
+    <Setting Name="MailPrompt" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="AutoHomeWork" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="HomeOfficeDays" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="OnTimeSend" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="OnTimeSendType" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="OnWorkBeginTime" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)" />
     </Setting>
   </Settings>
 </SettingsFile>

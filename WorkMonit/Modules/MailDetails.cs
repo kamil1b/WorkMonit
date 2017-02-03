@@ -8,6 +8,11 @@ namespace WorkMonit.Modules
 {
     public class MailDetails
     {
+        public MailDetails()
+        {
+            sendDate = null;
+        }
+
         public string Subject
         {
             set;get;
@@ -50,11 +55,12 @@ namespace WorkMonit.Modules
                 switch (Properties.Settings.Default.Signature)
                 {
                     case "None":
+                    case "":
                         return "";
                     case "Default":
                         return readRTFSignature();
                 }
-                return "";
+                return Properties.Settings.Default.Signature;
             }
         }
 
@@ -80,6 +86,10 @@ namespace WorkMonit.Modules
             
             return rtf.Rtf;
         }
+
+        public DateTime? SendDate { get { return sendDate; } set { sendDate = value; } }
+
+        private DateTime? sendDate;
 
     }
 }

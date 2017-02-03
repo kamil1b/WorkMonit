@@ -53,25 +53,25 @@ namespace WorkMonit
         public void OnBeginWork(Office.IRibbonControl control)
         {
             var mail = PrepareMail.PrepareWorkMail(1);
-            MainObj.SendeMailItem(mail);
+            MainObj.SendeMailItem(mail, true);
         }
 
         public void OnEndWork(Office.IRibbonControl control)
         {
             var mail = PrepareMail.PrepareWorkMail(2);
-            MainObj.SendeMailItem(mail);
+            MainObj.SendeMailItem(mail, false);
         }
 
         public void OnBeginHO(Office.IRibbonControl control)
         {
             var mail = PrepareMail.PrepareHOMail(1);
-            MainObj.SendeMailItem(mail);
+            MainObj.SendeMailItem(mail, true);
         }
 
         public void OnEndHO(Office.IRibbonControl control)
         {
             var mail = PrepareMail.PrepareHOMail(2);
-            MainObj.SendeMailItem(mail);
+            MainObj.SendeMailItem(mail, false);
         }
 
         #region IRibbonExtensibility Members
